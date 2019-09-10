@@ -1,17 +1,25 @@
 body {
-  background-image: url("https://wallpapercave.com/w/wp1828929.jpg")
+  background-image: url("https://wallpapercave.com/w/wp1828929.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .App {
   text-align: left;
-  margin-left: 260px;
+  margin-left: 300px;
+  margin-top: 75px;
 }
 
 .App h1 {
-  color: white;
+  color: red;
   font-size: 3rem;
 }
 
 .todo-form {
-  margin-left: 50px;
+  margin-left: 75px;
+}
+
+.clear-btn {
+  margin-left: 130px;
 }

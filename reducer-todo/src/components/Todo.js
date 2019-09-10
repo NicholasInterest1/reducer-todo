@@ -1,9 +1,10 @@
 import React from 'react';
+import styled from "styled-components";
 
 export default function Todo(props) {
   return (
     <div>
-      <p
+      <TheP
         style={{
           textDecoration: `${props.todo.completed ? 'line-through' : 'none'}`,
         }}
@@ -11,7 +12,12 @@ export default function Todo(props) {
           props.dispatch({ type: 'TOGGLE_TODO', payload: props.todo.id })
         }>
         {props.todo.item}
-      </p>
+      </TheP>
     </div>
   );
 }
+
+const TheP = styled.p`
+  margin-left: 110px;
+  color: white;
+`;

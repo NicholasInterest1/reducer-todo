@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function TodoForm(props) {
   return (
-    <div>
+    <div className="todo-form">
       <input
         type='text'
         value={props.todo}
